@@ -1,0 +1,26 @@
+{
+  "author": "David Addison",
+  "authorEmail": "djaddison.vcs@gmail.com",
+  "description": "This plugin is a text generator similar to Lorem Ipsum that uses Canadian slang words. For example: toque, deking, timbit.",
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "Generate lorem-ehsum",
+      "identifier": "loremehsum",
+      "script": "main.js"
+    }
+  ],
+  "menu": {
+    "title": "lorem-ehsum",
+    "items": [
+      "loremehsum"
+    ]
+  },
+  "version": "0.2.0",
+  "homepage": "https://github.com/djaddison/sketch-plugin-sketch-plugin-lorem-ehsum",
+  "name": "sketch-plugin-lorem-ehsum",
+  "disableCocoaScriptPreprocessor": true,
+  "appcast": "https://raw.githubusercontent.com/djaddison/sketch-plugin-sketch-plugin-lorem-ehsum/master/.appcast.xml"
+}

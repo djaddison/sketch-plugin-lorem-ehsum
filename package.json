@@ -1,0 +1,38 @@
+{
+  "name": "sketch-plugin-lorem-ehsum",
+  "description": "This plugin is a text generator similar to Lorem Ipsum that uses Canadian slang words. For example: toque, deking, timbit.",
+  "version": "0.2.0",
+  "license": "Apache-2.0",
+  "author": "David Addison <djaddison.vcs@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djaddison/sketch-plugin-sketch-plugin-lorem-ehsum.git"
+  },
+  "bugs": {
+    "url": "https://github.com/djaddison/sketch-plugin-sketch-plugin-lorem-ehsum/issues"
+  },
+  "homepage": "https://github.com/djaddison/sketch-plugin-sketch-plugin-lorem-ehsum",
+  "engines": {
+    "sketch": ">=3.0"
+  },
+  "skpm": {
+    "name": "sketch-plugin-lorem-ehsum",
+    "manifest": "src/manifest.json",
+    "main": "sketch-plugin-lorem-ehsum.sketchplugin",
+    "assets": [
+      "assets/**/*"
+    ]
+  },
+  "scripts": {
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "start": "skpm-build --watch --run",
+    "postinstall": "npm run build && skpm-link"
+  },
+  "devDependencies": {
+    "@skpm/builder": "^0.5.2"
+  },
+  "dependencies": {
+    "lodash.shuffle": "^4.2.0"
+  }
+}
